@@ -14,9 +14,12 @@ public abstract class TransportVehicle {
     public int getWheelsCount() {
         return wheelsCount;
     }
-    public void updateTyre(TransportVehicle transportVehicle) {
-        for (int i = 0; i < transportVehicle.getWheelsCount(); i++) {
-            System.out.println("Меняем покрышку");
+    public void updateTyre() {
+        System.out.println("Меняем покрышку");
+        }
+    public void checkTyre() {
+        for (int i = 0; i < getWheelsCount(); i++) {
+            updateTyre();
         }
     }
 }
